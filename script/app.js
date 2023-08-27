@@ -9,8 +9,23 @@ const requisicao = fetch('https://api.themoviedb.org/3/movie/popular?api_key=506
     json.results.map(function(valor){
         tituloFilme.innerHTML=``+valor.title+``;
         overwiew.innerHTML = ``+valor.overview+``
+       /*
+       
+       # terei que criar um novo elemento, utilizando for
+
+         for (let i = 0; i < 10; i++) {
+        const valor = json.results[i];
+        const novoTitulo = document.createElement("h2");
+        novoTitulo.textContent = valor.title;
+        tituloFilme.appendChild(novoTitulo);
         
-        
+        # criando nova descricao
+
+        const novaDescricao = document.createElement("p");
+        novaDescricao.textContent = valor.overview;
+        overwiew.appendChild(novaDescricao);
+
+       */
         
     })
     
