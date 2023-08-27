@@ -1,0 +1,18 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    top: 0;
+}
+.container{
+    width: 400rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;    
+}
+.titulo_filme h1{
+    font-size: 2.0rem;
+}
+.descricao_filme{
+    width: 20rem;
+    font-size: 1.0rem;
+}
+
+
