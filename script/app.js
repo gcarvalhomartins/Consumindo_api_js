@@ -7,9 +7,27 @@ const requisicao = fetch('https://api.themoviedb.org/3/movie/popular?api_key=506
     method:'GET'
 }).then(Response => Response.json()).then(function(json){
     json.results.map(function(valor){
+       
         tituloFilme.innerHTML=``+valor.title+``;
         overwiew.innerHTML = ``+valor.overview+``
-       /*
+        
+        //pegando o elemento
+        
+        // eu quero criar mais elementos como ele
+        for(var i = 0; i < 10; i++){
+            const pegandoElemento = document.querySelector(".container")
+            const criarElementos = pegandoElemento[i];
+            console.log(criarElementos)        
+        }
+        
+      
+    })
+    
+
+})
+
+
+ /*
        
        # terei que criar um novo elemento, utilizando for
 
@@ -23,16 +41,9 @@ const requisicao = fetch('https://api.themoviedb.org/3/movie/popular?api_key=506
 
         const novaDescricao = document.createElement("p");
         novaDescricao.textContent = valor.overview;
-        overwiew.appendChild(novaDescricao);
+        overwiew.appendChild(vaDescricao);
 
        */
-        
-    })
-    
-
-})
-
-
 
 
 
